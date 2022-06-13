@@ -88,7 +88,7 @@ Tech-stack: Node.js, fastify, ethers
 *endpoints assuming the server isn't deployed and running on localhost on port 8080*
   
 ***Check server status.***
-```js
+```
 http://localhost:8080/api/
 ```
 ***response***
@@ -97,7 +97,7 @@ http://localhost:8080/api/
 ```
 -------
 ***Get ETH  balance of {address}***
-```http
+```
 http://localhost:8080/api/getEthBalance/:address
 ex: 
 	0x4A091a403C140DF363b328e47F2f360F9977b4fc has 1.44 E
@@ -108,12 +108,12 @@ ex:
 ```
 --------
 ***Get Token balance of {address}***
-```http
+```
 http://localhost:8080/api/getBaliBalance/:address
 ex: 
 	0x4A091a403C140DF363b328e47F2f360F9977b4fc has 1436000000 $BaliGames
 ```
-```http
+```
 http://localhost:8080/api/getCustomTokenBalance/:address
 ex: 
 	0x4A091a403C140DF363b328e47F2f360F9977b4fc has 1436000000 $Custom
@@ -125,13 +125,13 @@ ex:
 --------
 
 ***Mint {amountInEth} / tokenPrice(from cfg.json) of $Token to {playerAddress}.***
-```http
+```
 http://localhost:8080/api/mintBaliTokens/:playerAddress/:amountInEth/:playerPrivateKey/
 ex: 
 	0.1 E / 0.001E(tokenPrice) = 100 $BaliGames tokens minted to 0x4A091a403C140DF363b328e47F2f360F9977b4fc
 ```
 
-```http
+```
 http://localhost:8080/api/mintCustomTokens/:playerAddress/:amountInEth/:playerPrivateKey/
 ex: 
 	0.1 E / 0.00005E(customTokenPrice) = 2000 $Custom tokens minted to 0x4A091a403C140DF363b328e47F2f360F9977b4fc
@@ -142,14 +142,14 @@ ex:
 ```
 ----
 ***Burn/use {amountToBurn} of $Token from {playerAddress}.***
-```http
+```
 http://localhost:8080/api/burnBaliTokens/:playerAddress/:amountToBurn/:playerPrivateKey/
 ex: 
 	Burn 1000000 $BaliGames from 0x4A091a403C140DF363b328e47F2f360F9977b4fc
 ```
 
 
-```http
+```
 http://localhost:8080/api/burnCustomTokens/:playerAddress/:amountToBurn/:playerPrivateKey/
 
 Burn/use {amountToBurn} of $Custom token from {playerAddress}.
