@@ -88,7 +88,7 @@ Tech-stack: Node.js, fastify, ethers
 *endpoints assuming the server isn't deployed and running on localhost on port 8080*
   
 ***Check server status.***
-```http
+```js
 http://localhost:8080/api/
 ```
 ***response***
