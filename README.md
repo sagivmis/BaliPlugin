@@ -224,7 +224,7 @@ ex:
 
 
 ## Config file
-A config file that works with both the Unity plugin aswell as the server microservice (same file)
+A config file that works with both the Unity plugin aswell as the server microservice (same file)  
 Required information:
 ```json
 	"gameOwnerAddress": Developer's ETH wallet address
