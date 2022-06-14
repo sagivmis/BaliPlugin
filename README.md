@@ -54,7 +54,7 @@ public void SetEthBalance(decimal balance)
 ```
 **`Usage`**
 ```csharp
-StartCoroutine(GetAccountBalance(walletAddress, SetEthBalance));
+StartCoroutine(GetAccountBalance(walletAddress, SetEthBalance))
 ```
 ----
 **Http Get Request**
@@ -72,7 +72,7 @@ public void SetEthBalance(decimal balance)
 **`Usage`**
 ```csharp
 StartCoroutine(HttpGetRequest(${SERVER_URL}/api/mintBaliTokens/{playerAddress}/{amountInEth}
-/{playerPrivateKey}", "mint"));
+/{playerPrivateKey}", "mint"))
 ```
 
 
